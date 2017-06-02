@@ -26,8 +26,8 @@ This sample module contains one small method - filter_contigs.
     # the latter method is running.
     ######################################### noqa
     VERSION = "0.0.1"
-    GIT_URL = ""
-    GIT_COMMIT_HASH = ""
+    GIT_URL = "https://github.com/jessica-cole/test.git"
+    GIT_COMMIT_HASH = "025561bca734caf13c32af3e2b9eba6686310113"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -53,36 +53,38 @@ This sample module contains one small method - filter_contigs.
         and input/return arguments to the function.  For all typical KBase
         Apps that run in the Narrative, your function should have the 
         'authentication required' modifier.
-        :param params: instance of type "FilterContigsParams" (A 'typedef'
-           can also be used to define compound or container objects, like
-           lists, maps, and structures.  The standard KBase convention is to
-           use structures, as shown here, to define the input and output of
-           your function.  Here the input is a reference to the Assembly data
-           object, a workspace to save output, and a length threshold for
-           filtering. To define lists and maps, use a syntax similar to C++
-           templates to indicate the type contained in the list or map.  For
-           example: list <string> list_of_strings; mapping <string, int>
-           map_of_ints;) -> structure: parameter "assembly_input_ref" of type
-           "assembly_ref" (A 'typedef' allows you to provide a more specific
-           name for a type.  Built-in primitive types include 'string',
-           'int', 'float'.  Here we define a type named assembly_ref to
-           indicate a string that should be set to a KBase ID reference to an
+        :param params: instance of type "FilterContigsParams" (*  A 'typedef'
+           can also be used to define compound or container *  objects, like
+           lists, maps, and structures.  The standard KBase *  convention is
+           to use structures, as shown here, to define the *  input and
+           output of your function.  Here the input is a *  reference to the
+           Assembly data object, a workspace to save *  output, and a length
+           threshold for filtering. * *  To define lists and maps, use a
+           syntax similar to C++ templates *  to indicate the type contained
+           in the list or map.  For example: * *      list <string>
+           list_of_strings; *      mapping <string, int> map_of_ints;) ->
+           structure: parameter "assembly_input_ref" of type "assembly_ref"
+           (*  A 'typedef' allows you to provide a more specific name for * 
+           a type.  Built-in primitive types include 'string', 'int', * 
+           'float'. * *  Here we define a type named assembly_ref to indicate
+           *  a string that should be set to a KBase ID reference to an * 
            Assembly data object.), parameter "workspace_name" of String,
            parameter "min_length" of Long
-        :returns: instance of type "FilterContigsResults" (Here is the
-           definition of the output of the function.  The output can be used
-           by other SDK modules which call your code, or the output
+        :returns: instance of type "FilterContigsResults" (*  Here is the
+           definition of the output of the function.  The output *  can be
+           used by other SDK modules which call your code, or the output * 
            visualizations in the Narrative.  'report_name' and 'report_ref'
-           are special output fields- if defined, the Narrative can
-           automatically render your Report.) -> structure: parameter
+           are *  special output fields- if defined, the Narrative can
+           automatically *  render your Report.) -> structure: parameter
            "report_name" of String, parameter "report_ref" of String,
-           parameter "assembly_output" of type "assembly_ref" (A 'typedef'
-           allows you to provide a more specific name for a type.  Built-in
-           primitive types include 'string', 'int', 'float'.  Here we define
-           a type named assembly_ref to indicate a string that should be set
-           to a KBase ID reference to an Assembly data object.), parameter
-           "n_initial_contigs" of Long, parameter "n_contigs_removed" of
-           Long, parameter "n_contigs_remaining" of Long
+           parameter "assembly_output" of type "assembly_ref" (*  A 'typedef'
+           allows you to provide a more specific name for *  a type. 
+           Built-in primitive types include 'string', 'int', *  'float'. * * 
+           Here we define a type named assembly_ref to indicate *  a string
+           that should be set to a KBase ID reference to an *  Assembly data
+           object.), parameter "n_initial_contigs" of Long, parameter
+           "n_contigs_removed" of Long, parameter "n_contigs_remaining" of
+           Long
         """
         # ctx is the context object
         # return variables are: output

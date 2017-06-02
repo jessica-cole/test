@@ -16,8 +16,8 @@ import us.kbase.common.service.UnauthorizedException;
 /**
  * <p>Original spec-file module name: test</p>
  * <pre>
- * A KBase module: test
- * This sample module contains one small method - filter_contigs.
+ * *        A KBase module: test
+ * *        This sample module contains one small method - filter_contigs.
  * </pre>
  */
 public class TestClient {
@@ -166,10 +166,10 @@ public class TestClient {
     /**
      * <p>Original spec-file function name: filter_contigs</p>
      * <pre>
-     * The actual function is declared using 'funcdef' to specify the name
-     * and input/return arguments to the function.  For all typical KBase
-     * Apps that run in the Narrative, your function should have the 
-     * 'authentication required' modifier.
+     * *  The actual function is declared using 'funcdef' to specify the name
+     * *  and input/return arguments to the function.  For all typical KBase
+     * *  Apps that run in the Narrative, your function should have the 
+     * *  'authentication required' modifier.
      * </pre>
      * @param   params   instance of type {@link us.kbase.test.FilterContigsParams FilterContigsParams}
      * @return   parameter "output" of type {@link us.kbase.test.FilterContigsResults FilterContigsResults}

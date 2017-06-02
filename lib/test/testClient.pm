@@ -313,11 +313,13 @@ sub _validate_version {
 
 =item Description
 
-A 'typedef' allows you to provide a more specific name for
-a type.  Built-in primitive types include 'string', 'int',
-'float'.  Here we define a type named assembly_ref to indicate
-a string that should be set to a KBase ID reference to an
-Assembly data object.
+*  A 'typedef' allows you to provide a more specific name for
+*  a type.  Built-in primitive types include 'string', 'int',
+*  'float'. 
+*  
+*  Here we define a type named assembly_ref to indicate
+*  a string that should be set to a KBase ID reference to an
+*  Assembly data object.
 
 
 =item Definition
@@ -348,18 +350,18 @@ a string
 
 =item Description
 
-A 'typedef' can also be used to define compound or container
-objects, like lists, maps, and structures.  The standard KBase
-convention is to use structures, as shown here, to define the
-input and output of your function.  Here the input is a
-reference to the Assembly data object, a workspace to save
-output, and a length threshold for filtering.
-
-To define lists and maps, use a syntax similar to C++ templates
-to indicate the type contained in the list or map.  For example:
-
-    list <string> list_of_strings;
-    mapping <string, int> map_of_ints;
+*  A 'typedef' can also be used to define compound or container
+*  objects, like lists, maps, and structures.  The standard KBase
+*  convention is to use structures, as shown here, to define the
+*  input and output of your function.  Here the input is a
+*  reference to the Assembly data object, a workspace to save
+*  output, and a length threshold for filtering.
+* 
+*  To define lists and maps, use a syntax similar to C++ templates
+*  to indicate the type contained in the list or map.  For example:
+*
+*      list <string> list_of_strings;
+*      mapping <string, int> map_of_ints;
 
 
 =item Definition
@@ -398,11 +400,11 @@ min_length has a value which is an int
 
 =item Description
 
-Here is the definition of the output of the function.  The output
-can be used by other SDK modules which call your code, or the output
-visualizations in the Narrative.  'report_name' and 'report_ref' are
-special output fields- if defined, the Narrative can automatically
-render your Report.
+*  Here is the definition of the output of the function.  The output
+*  can be used by other SDK modules which call your code, or the output
+*  visualizations in the Narrative.  'report_name' and 'report_ref' are
+*  special output fields- if defined, the Narrative can automatically
+*  render your Report.
 
 
 =item Definition
