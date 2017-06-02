@@ -14,11 +14,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 /**
  * <p>Original spec-file type: FilterContigsResults</p>
  * <pre>
- * Here is the definition of the output of the function.  The output
- * can be used by other SDK modules which call your code, or the output
- * visualizations in the Narrative.  'report_name' and 'report_ref' are
- * special output fields- if defined, the Narrative can automatically
- * render your Report.
+ * *  Here is the definition of the output of the function.  The output
+ * *  can be used by other SDK modules which call your code, or the output
+ * *  visualizations in the Narrative.  'report_name' and 'report_ref' are
+ * *  special output fields- if defined, the Narrative can automatically
+ * *  render your Report.
  * </pre>
  * 
  */

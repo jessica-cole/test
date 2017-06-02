@@ -2,7 +2,7 @@ module-name:
     test
 
 module-description:
-    A KBase module
+    A KBase module for testing setting up of the Kbase SDK.
 
 service-language:
     python
